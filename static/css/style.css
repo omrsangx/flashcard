@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box
+}
+
+/* body */
+body {
+  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Open Sans', sans-serif; /* font-family: 'Ubuntu', sans-serif;  */
+  background-color: #fd5e5e;
+  background-size: cover;
+}
+
+/* main div */
+.main {
+  /*background: #00ffea;*/
+  padding: 5%;
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  line-height: 1.58;
+  font-size: 120px;
+  text-align: center;
+}
+
+/* Next & Previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 43%;
+  width: auto;
+  margin-top: -30px;
+  padding: 30px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #000000cc;
+  color: white;
+}
+
+/* Menu button to open */
+.menu-button-open {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+/* overlay's layout */
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000e6;
+  overflow-y: auto;
+  transition: 0.5s;
+}
+
+/* overlay-content's and text layout and stylings */
+.overlay-content {
+  position: relative;
+  top: 10%;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 100px;
+}
+
+/* overlay's a tag */
+.overlay a {
+  padding: 8px;
+  font-size: 30px;
+  color: #f1f1f1;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Overlay's hovering color */
+.overlay a:hover, .overlay a:focus {
+  color: #818181;
+}
+
+/* Menu button to close */
+.overlay .menu-button-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 60px;
+}
+  
+/* For tablets */
+@media only screen and (max-width:800px) {
+  .main {
+    /*background: #00ffea;*/
+    padding: 10%;
+    width: auto;
+    height: auto;
+    /* Center vertically and horizontally */
+    display: flex;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    line-height: 1.58;
+    font-size: 65px;
+    text-align: center;
+  }
+  
+  /* Next & Previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 44%;
+    width: auto;
+    margin-top: -30px;
+    padding: 20px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: #000000cc;
+    color: white;
+  }
+
+  .overlay {overflow-y: auto;}
+
+  .overlay .menu-button-close {
+    font-size: 35px;
+    top: 10px;
+    right: 20px;
+  }
+
+}
+
+/* For mobile phones: */
+@media only screen and (max-width:100px) {
+  .main {
+    /* background: #00ffea; */
+    padding: 10%;
+    width: auto;
+    height: auto;
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    line-height: 1.58;
+    font-size: 65px;
+    text-align: center;
+  }
+  
+  /* Next & Previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 44%;
+    width: auto;
+    margin-top: -30px;
+    padding: 20px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: #000000cc;
+    color: white;
+  }
+
+  .overlay {overflow-y: auto;}
+
+  /* .overlay a {font-size: 20px} */
+  
+  .overlay .menu-button-close {
+    font-size: 35px;
+    top: 10px;
+    right: 20px;
+  }
+
+}
