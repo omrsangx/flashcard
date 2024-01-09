@@ -1,0 +1,73 @@
+
+/* .verb-tense-container-class {
+} */
+
+.verb-tense-div-span-class {
+    text-align: center;
+    display: inline-block;
+    margin: 1px;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    /* margin-top: 10px; */
+
+}
+
+.divider {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #555; /* Gray */
+}
+
+.past, .present, .future {
+    color: #555; /* Text color */
+    border: 2px solid; /* Colored border */
+    padding: 8px; /* Padding within the border */
+    border-radius: 5px; /* Optional: Rounded corners */
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: opacity 0.5s;
+}
+
+.past {
+    border-color: #e74c3c; /* Blue border */
+}
+
+.present {
+    border-color: #27ae60; /* Green border */
+}
+
+.future {
+    border-color: #3498db; /* Red border */
+}
+
+.verb-tennse-sentence-class {
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.5s;
+    font-size: 26px;
+    position: absolute;
+    top: 71.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    text-align: center;
+    /* width: 100%; */
+    /* padding: 5%; */
+    /* margin-top: 0px; */
+
+}
+
+.fading-out-class {
+    opacity: 0.5;
+}
+

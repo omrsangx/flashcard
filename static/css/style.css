@@ -11,7 +11,7 @@ body {
 }
 
 /* main div */
-.translating-word {
+.translating-word-class {
   padding: 5%;
   position: absolute;
   top: 45%;
@@ -21,11 +21,11 @@ body {
   height: auto;
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
-  font-size: 120px;
+  font-size: 100px;
   text-align: center;
 }
 
-.pronouncing-word {
+.pronouncing-word-class {
   position: absolute;
   left: 0;
   top: 60%;
@@ -114,130 +114,4 @@ body {
   top: 20px;
   right: 20px;
   font-size: 60px;
-}
-  
-/* For tablets */
-@media only screen and (max-width:800px) {
-  .main {
-    padding: 10%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 44%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-    font-size: 65px;
-    text-align: center;
-  }
-  
-  .pronouncing-word {
-    position: absolute;
-    left: 0;
-    top: 65%;
-    line-height: 65px;
-    width: 100%;
-    text-align: center;
-  } 
-
-  /* Next & Previous buttons */
-  .prev, .next {
-    display: flex;
-    cursor: pointer;
-    position: absolute;
-    top: 44%;
-    width: auto;
-    margin-top: -30px;
-    padding: 20px;
-    color: #888;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-
-  /* Position the "next button" to the right */
-  .next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: #000000cc;
-    color: white;
-  }
-
-  .overlay {overflow-y: auto;}
-
-  .overlay .menu-button-close {
-    font-size: 35px;
-    top: 10px;
-    right: 20px;
-  }
-
-}
-
-/* For mobile phones: */
-@media only screen and (max-width:100px) {
-  .main {
-    padding: 10%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 44%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-    font-size: 65px;
-    text-align: center;
-  }
-  
-  .pronouncing-word {
-    position: absolute;
-    left: 0;
-    top: 65%;
-    line-height: 65px;
-    width: 100%;
-    text-align: center;
-  } 
-
-  /* Next & Previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 44%;
-    width: auto;
-    margin-top: -30px;
-    padding: 20px;
-    color: #888;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-
-  /* Position the "next button" to the right */
-  .next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: #000000cc;
-    color: white;
-  }
-
-  .overlay {overflow-y: auto;}
-  
-  .overlay .menu-button-close {
-    font-size: 35px;
-    top: 10px;
-    right: 20px;
-  }
 }
