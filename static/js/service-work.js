@@ -5,6 +5,8 @@ var wpaAppCacheFiles = [
   '/',
   '/index.html',
   '/static/css/style.css',
+  '/static/css/verb-tenses.css',
+  '/static/css/mobile-layout.css',
   '/static/js/javascript.js',
   '/static/images/favicon-16x16.png',
   '/static/images/favicon-32x32.png',

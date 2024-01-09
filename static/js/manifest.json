@@ -1,6 +1,6 @@
 {
-  "name": "SV Flash Card",
-  "short_name": "SV Flash Card",
+  "name": "Language Flash Card",
+  "short_name": "Language Flash Card",
   "icons": [{
     "src": "/static/images/favicon-16x16.png",
       "sizes": "128x128",
