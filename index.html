@@ -27,9 +27,12 @@
       <!-- CSS Style -->
       <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); </style>      
       <link rel="stylesheet" href="./static/css/style.css">
+      <link rel="stylesheet" href="./static/css/verb-tenses.css">
+      <link rel="stylesheet" href="./static/css/mobile-layout.css">
 
       <!-- JavaScript -->
       <script type="text/javascript" src="./static/js/javascript.js" defer></script>
+      <!-- <script type="text/javascript" src="./static/js/verbs.js" defer></script> -->
 
    </head>
    <body>
@@ -54,18 +57,47 @@
             <a href="# "><div id="basic_words" onclick="vocabularyFunction(basisWords)"> Basic Words </div></a>
             <a href="# "><div id="600 Random Words" onclick="vocabularyFunction(random600)"> 600 Random Words </div></a>
 
+            <a href="# "><div id="duo" onclick="vocabularyFunction(duo)"> Duo </div></a>
             <a href="# "><div id="sentences" onclick="vocabularyFunction(sentences)"> Sentences </div></a>
+
+            <!-- <a href="# "><div id="verb_tenses_obj" onclick="vocabularyFunction(verbTensesObj)"> Verb Tenses </div></a> -->
+            <a href="# "><div id="verb_tenses_obj" onclick="verbTenseFunction(verbTensesObj)"> Verb Tenses </div></a>
             
          </div>
        </div>
        <div class="menu-button-open"><span style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776;</span></div>
       
-      <div class="translating-word"> 
-            <p id="value" onclick="clickToTranslateWord()"></p>
+       <div id="vocabulariesPageId">
+         <div class="translating-word-class"> 
+               <p id="clickToTranslateWordId" onclick="clickToTranslateWord()"></p>
+         </div>
+         
+         <!-- Implementing the Web Speech API inside the clickToSkeakWord function -->
+         <div class="pronouncing-word-class">
+            <img src="static/images/wave-sound.png" alt="Sound wave" width="65px" height="65px" onclick="clickToSpeakWord(pronounceWord)">      
+         </div>
       </div>
-      
-      <div class="pronouncing-word">
-         <img src="static/images/wave-sound.png" alt="Sound wave" width="65px" height="65px" onclick="clickToSpeakWord(pronounceWord)">      
+
+      <div id="verbTensesPageId" style="display:none">
+         <div class="verb-tense-container-class">
+            <div class="translating-word-class"> 
+               <p id="valueVerbTensesId" onclick="expandVerbTense()"></p>
+            </div>      
+            <div id="verbSentencesId" class="verb-tense-div-span-class" style="display:none">
+               <span id="verbPastId" class="past" onclick="pastTenseSentence()"></span>
+               <span class="divider">|</span>
+               <span id="verbPresentId" class="present" onclick="presentTenseSentence()"></span>
+               <span class="divider">|</span>
+               <span id="verbFutureId" class="future" onclick="futureTenseSentence()"></span>
+            </div>
+            <div class="verb-tennse-sentence-class">
+               <p id="verbTenseSentenceId" onclick="clickToSpeakWord(pronounceTenseSentence)"></p> 
+            </div>
+         </div>
+         <!-- 
+         <a class="prev" onclick="Prev()">❮</a>
+         <a class="next" onclick="Next()">❯</a> 
+         -->
       </div>
 
       <a class="prev" onclick="Prev()">❮</a>
@@ -75,7 +107,12 @@
 </html> 
 
 <!-- 
-Credits:
-   <a href="https://www.flaticon.com/free-icons/radio" title="radio icons">Radio icons created by Freepik - Flaticon</a>
+   <p><a href="https://sverigesradio.se/artikel/flera-tusen-lediga-jobb-pa-restauranger-och-barer">Flera Jobb</a></p>
 
+   Credits:
+      <a href="https://www.flaticon.com/free-icons/radio" title="radio icons">Radio icons created by Freepik - Flaticon</a>
+
+   Resources:
+   https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API
+   https://www.digitalocean.com/community/tutorials/how-to-build-a-text-to-speech-app-with-web-speech-api
 -->
